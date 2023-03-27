@@ -103,7 +103,7 @@ In this example, you will add four routes for your application: the login, callb
 
 - `login` - When visitors to your app visit the `/login` route, they will reach Auth0 to begin the authentication flow.
 - `callback` - After your users finish logging in with Auth0, they will return to your application at the `/callback` route. This route saves the session for the user and bypasses the need for them to login again when they return.
-- `logout` - +The `/logout` route signs users out from your application. This route clears the user session in your app and redirects to the Auth0 logout endpoint to ensure the session is no longer saved. Then, the application redirects the user to your home route.
+- `logout` - The `/logout` route signs users out from your application. This route clears the user session in your app and redirects to the Auth0 logout endpoint to ensure the session is no longer saved. Then, the application redirects the user to your home route.
 - `index` - The home route will render an authenticated user's details or allow visitors to sign in.
 
 ## Register your routes {{{ data-action=code data-code="webappexample/urls.py" }}}
